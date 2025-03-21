@@ -65,6 +65,8 @@ def update(board, player):
                 if move > length**2 - 1:
                     print('Out of range!')
                     continue
+            else:
+                continue
         i, j = move // len(board), move % len(board)
         # print(i, j)
         if board[i][j]:
